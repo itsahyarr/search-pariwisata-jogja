@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #82bbe9;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    padding-top: 60px;
+}
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: .5rem;
+}
+.container {
+    overflow: hidden;
+    box-shadow: 0 2px 8px 0 var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: auto;
+    margin-bottom: .5rem;
+}
+.card-image {
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.card-image img {
+    /* padding-top: 4px; */
+    width: inherit;
+    height: inherit;
+}
+/* .banner-img {
+
+} */
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card {
+    background: white;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+}
+ */
+/* .containter {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.containter .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.containter .card:hover {
+    height: 420px;
+}
+.containter .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+.containter .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+} */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: .5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    .box {
+        width: 100%;
+        z-index: -1;
+        padding: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    input[type="text"] {
+        width: auto;
+    }
+}
+h1 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"] {
+    background: #fff;
+    width: 345px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+input[type="submit"] {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #2196f3;
+    color: #fff;
+}
+input[type="submit"]:hover {
+    background: #ffc107
+}
+@media (max-width: 991px) {
+    input[type="text"] {
+        display: flex;
+        width: 100%;
+        border-radius: 25px;
+    }
+    input[type="submit"] {
+        width: 50%;
+        align-self: center;
+        border-radius: 25px;
+    }
+}

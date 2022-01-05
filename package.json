@@ -1,0 +1,12 @@
+{
+  "name": "input-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -sw"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
